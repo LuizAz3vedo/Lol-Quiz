@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #4682B4;
+}
+
+.cabecalho{
+    background: #000000;
+    border-bottom: solid 5px #1C1C1C;
+    height: 80px;
+    box-sizing: content-box;
+}
+
+.logo{
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+.logo img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.menu-toggle{
+    float: right;
+    background-color: #555;
+    border: solid 1px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+.menu-toggle button{
+    color: white;
+}
+
+.menu{
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+.titulo{
+    position: absolute;
+    color: #eee;
+    right: 640px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3em;
+}
+
+.menu a{
+    padding: 15px;
+}
+
+.menu a:hover,
+.menu a.selected{
+    background-color: #4682B4;
+    color: #fff
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.tempo{
+    position: fixed;
+    left: 1170px;
+    top: 95px;
+
+}
+.timer{
+    display: inline-block;
+    position: absolute;
+    right: 1190px;
+    top: 270px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    
+}
+.informacoes input{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 250px;
+    height: 47px; 
+    border-radius: 15px;
+    border: 2px solid #1A1A1A;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+
+.informacoes img{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    right: 1190px;
+    bottom: 355px;
+}
+.comecar{
+    position: fixed;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 40px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    right: 1110px;
+    top: 95px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.comecar:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    background-color: #808080;
+}
+
+.revelar{
+    position: fixed;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 40px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    right: 1110px;
+    top: 405px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.revelar:hover{
+    background-color: #B22222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.explicar{
+    position: absolute;
+    width: 250px;
+    font-size: 8px;
+    right: 12px;
+    top: 200px;  
+}
+.tabela{
+    position: absolute;
+    left: 300px;
+    top: 85px;
+    width: 1065px;
+    height: 550px;
+    border-collapse: collapse;
+    background-color: lightsteelblue;  
+}
+table tr td {
+    border: 1px solid;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+td:hover{
+    background-color: #808080;
+    cursor: pointer;
+}
+td{
+    width: 50px;
+    
+}
+
+.texto1{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    top: 495px;
+    left: 10px; 
+}
+
+.acertos{
+    position: absolute;
+    right: 1130px;
+    top: 325px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;    
+}
+.explicar {
+    position: fixed;
+    left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+.listaCompleta{
+    display: flex;
+    flex-flow: row wrap;
+}
+.listaCompleta ul{
+    background: #E9967A;
+    padding: 20px;
+    margin: 15px;
+}
+.listaCompleta ul li{
+    background: #FFE4C4;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+@media(min-width: 679px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .menu-toggle button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobileMenu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/quiz.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <script src="js/axios.js"></script>
+    <script src="js/script.js"></script>
+    <title>Lol Quiz</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="IMG/VaderIA.png" alt="logo" />
+            </a>
+        </div>
+        <div class="menu-toggle" >
+            <button onclick="botaoMenu()">Menu</button>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio">Início</a></li>
+                <li class="titulo"> League of Quiz</li>
+            </ul>
+        </nav>
+        <div class="mobileMenu">
+            <ul>
+                <li class="nav-item"><a href="#inicio">Início</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="informacoes">
+        <img src="IMG/clock-ui-web-svgrepo-com.svg">
+        <h1 class="timer">10:00</h1>
+        <h1 class="acertos">Acertos: 0/162</h1>
+        <button onclick="comecarTempo()" class="comecar">Começar Quiz</button>
+        <button onclick="revelar()" class="revelar">Desistir</button>
+    </div>
+    
+    <table class="tabela">
+        <tbody id="tbody"></tbody>
+    </table>
+    <h1 class="texto1">Quiz sobre os campeões do Lol.
+        <br>
+        Consegue lembrar o nome dos
+        <br>
+        162 campeões?
+    </h1>
+</html>
