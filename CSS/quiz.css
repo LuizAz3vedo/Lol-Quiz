@@ -98,7 +98,7 @@ body {
     
 }
 .informacoes input{
-    position: absolute;
+    position: fixed;
     left: 10px;
     top: 10px;
     width: 250px;
@@ -119,7 +119,7 @@ body {
     bottom: 355px;
 }
 .comecar{
-    position: absolute;
+    position: relative;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -144,7 +144,7 @@ body {
 }
 
 .revelar{
-    position: absolute;
+    position: fixed;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
