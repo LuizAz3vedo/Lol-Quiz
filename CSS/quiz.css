@@ -94,7 +94,7 @@ body {
 }
 .timer{
     display: inline-block;
-    position: relative;
+    position: absolute;
     right: 1190px;
     top: 270px;
     font-family: 'Times New Roman', Times, serif;
@@ -116,7 +116,7 @@ body {
 }
 
 .informacoes img{
-    position: relative;
+    position: absolute;
     height: 100px;
     width: 90px;
     right: 1190px;
@@ -210,11 +210,11 @@ td{
 }
 
 .acertos{
-    position: relative;
+    position: absolute;
     right: 1130px;
     top: 325px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;    
+    font-size: 35px;    
 }
 .explicar {
     position: fixed;
