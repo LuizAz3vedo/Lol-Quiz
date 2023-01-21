@@ -101,6 +101,11 @@ body {
     font-size: 35px;
     
 }
+.informacoes{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
 .informacoes input{
     position: relative;
     left: 10px;
@@ -210,9 +215,12 @@ td{
 }
 
 .acertos{
+    display: flex;
+    align-items: center;
     position: fixed;
     right: 1130px;
     top: 325px;
+    padding-left: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;    
 }
