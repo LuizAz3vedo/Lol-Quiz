@@ -5,10 +5,6 @@
 body {
     margin: 0;
     background-color: #4682B4;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px 50px;
 }
 
 .cabecalho{
@@ -102,7 +98,7 @@ body {
     
 }
 .informacoes input{
-    position: fixed;
+    position: relative;
     left: 10px;
     top: 10px;
     width: 250px;
@@ -133,11 +129,10 @@ body {
     background-color: #000000;
     border: 2px solid #1A1A1A;
     color: #FFFFFF;
-    transition-duration: 0.4s;
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
-    right: 1110px;
-    top: 95px;
+    left: 5px;
+    top: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -148,7 +143,7 @@ body {
 }
 
 .revelar{
-    position: fixed;
+    position: relative;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -161,8 +156,8 @@ body {
     transition-duration: 0.4s;
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
-    right: 1110px;
-    top: 405px;
+    right: 250px;
+    top: 305px;
     font-family: 'Times New Roman', Times, serif;
 }
 
