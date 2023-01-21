@@ -93,8 +93,10 @@ body {
 
 }
 .timer{
-    display: inline-block;
+    display: flex;
     position: absolute;
+    flex-direction: column;
+    align-items: center;
     right: 1190px;
     top: 270px;
     font-family: 'Times New Roman', Times, serif;
@@ -121,11 +123,13 @@ body {
 }
 
 .informacoes img{
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     height: 100px;
     width: 90px;
-    right: 1190px;
     bottom: 355px;
+    align-items: center;
 }
 .comecar{
     position: relative;
@@ -157,6 +161,7 @@ body {
     font-weight: 600;
     text-align: center;
     padding: 14px 40px;
+    padding-left: 10px;
     width: 250px;
     border-radius: 15px;
     background-color: #000000;
@@ -175,13 +180,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
-.explicar{
-    position: absolute;
-    width: 250px;
-    font-size: 8px;
-    right: 12px;
-    top: 200px;  
-}
+ 
 .tabela{
     position: absolute;
     left: 300px;
@@ -217,19 +216,14 @@ td{
 .acertos{
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 1130px;
     top: 325px;
     padding-left: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;    
 }
-.explicar {
-    position: fixed;
-    left: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
-}
+
 .listaCompleta{
     display: flex;
     flex-flow: row wrap;
