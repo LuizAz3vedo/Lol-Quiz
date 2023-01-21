@@ -116,7 +116,7 @@ body {
 }
 
 .informacoes img{
-    position: absolute;
+    position: fixed;
     height: 100px;
     width: 90px;
     right: 1190px;
@@ -236,6 +236,12 @@ td{
     padding: 5px;
     margin: 5px;
 
+}
+
+@media screen and (min-width: 649px){
+    .informacoes img {
+        right: 1190px;
+    }
 }
 
 @media(min-width: 679px) {
