@@ -116,7 +116,7 @@ body {
 }
 
 .informacoes img{
-    position: absolute;
+    position: relative;
     height: 100px;
     width: 90px;
     right: 1190px;
@@ -214,7 +214,7 @@ td{
     right: 1130px;
     top: 325px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;    
+    font-size: 30px;    
 }
 .explicar {
     position: fixed;
