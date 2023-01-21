@@ -7,8 +7,8 @@ body {
     background-color: #4682B4;
     position: fixed;
     width: 100%;
-    height: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .cabecalho{
@@ -94,7 +94,7 @@ body {
 }
 .timer{
     display: inline-block;
-    position: absolute;
+    position: relative;
     right: 1190px;
     top: 270px;
     font-family: 'Times New Roman', Times, serif;
@@ -210,7 +210,7 @@ td{
 }
 
 .acertos{
-    position: absolute;
+    position: relative;
     right: 1130px;
     top: 325px;
     font-family: 'Times New Roman', Times, serif;
