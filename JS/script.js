@@ -86,21 +86,18 @@ function comparar(){
             let maiscula2 = maiscula[i+1].toUpperCase()
             let iC = i+1
             let palavraC = maiscula.replace(maiscula[iC], maiscula2)
-            console.log(maiscula)
             removerNone(palavraC)
             score()
             input.value=''
         }
         else if (maiscula == "Jarvan iv"){
             let palavraC = "Jarvan IV"
-            console.log(maiscula)
             removerNone(palavraC)
             score()
             input.value=''
         }
         else if (maiscula == "Nunu e willump"){
             let palavraC = "Nunu E Willump"
-            console.log(maiscula)
             removerNone(palavraC)
             score()
             input.value=''
@@ -115,13 +112,16 @@ function comparar(){
             input.value=''
         }
 
-        removerNone(maiscula)
+        
         let splitado = itens.split(',')
+        let displayValue = document.getElementById(maiscula)
+        let verificarDisplay = getComputedStyle(displayValue).getPropertyValue('display')
         let tamanhoItens = splitado.length
         for(i = 0; i <= tamanhoItens; i++){
-            if(maiscula == splitado[i]){
-                input.value = ''  
-                score()
+            if(maiscula == splitado[i] && verificarDisplay == 'none'){
+                input.value = ''
+                removerNone(maiscula)
+                score() 
             }
         } 
         
