@@ -13,7 +13,11 @@ function revelar(){
         clearInterval(this.loop)
         for(i = 0; i <= tamanhoItens; i++){
             let mudarDisplay = document.getElementById(splitado[i])
-            mudarDisplay.style.display = ''
+            let verificarDisplay = getComputedStyle(mudarDisplay).getPropertyValue('display')
+            if(verificarDisplay == 'none'){
+                mudarDisplay.style.display = ''
+                mudarDisplay.style.color = 'red'
+            }
         }
 
     })
